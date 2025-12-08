@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/top-page.css">
-
+  <script src="<?php echo get_template_directory_uri(); ?>/js/header.js" defer></script>
 </head>
 
 <body>
@@ -22,11 +22,13 @@
         </a>
       </div>
 
-      <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く">
+      <button class="header__menu-btn" type="button" aria-expanded="false" aria-controls="global-nav" aria-label="メニューを開く" id="hamburgerBtn">
         <span class="header__menu-line"></span>
         <span class="header__menu-line"></span>
         <span class="header__menu-line"></span>
       </button>
+
+      <div class="overlay" id="overlay"></div>
 
       <nav class="header__nav" id="global-nav" aria-label="グローバルナビゲーション">
         <ul class="nav-list">
