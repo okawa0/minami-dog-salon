@@ -39,7 +39,7 @@
               <li class="nav-list__item-sns-icon"><a class="nav-list__item-sns-icon-link" href="#"><img class="nav-list__item-sns-icon-img" src="<?php echo get_template_directory_uri(); ?>/img/yelp-logo.png" alt="yelpロゴ"></a></li>
             </ul>
           </li>
-          <li class="nav-list__item"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/user-icon.png" alt="user-icon">ログイン</a></li>
+          <li class="nav-list__item"><a class="nav-list__item-login" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/user-icon.png" alt="user-icon">ログイン</a></li>
           <li class="nav-list__item"><a class="nav-list__item-cta" href="#">今すぐ予約</a></li>
         </ul>
       </nav>
