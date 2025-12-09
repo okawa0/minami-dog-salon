@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/top-page.css">
   <script src="<?php echo get_template_directory_uri(); ?>/js/header.js" defer></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/top-page.js" defer></script>
 </head>
 
 <body>

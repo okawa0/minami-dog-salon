@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -65,9 +72,19 @@
       display: flex;
       align-items: center;
       gap: 1rem;
+      padding-bottom: 3px; /* テキストと下線の間隔 */
+      background-image: linear-gradient(#000, #000);
+      background-repeat: no-repeat;
+      background-position: bottom right; /* 下線の初期位置 */
+      background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+      transition: background-size 0.3s;
       @media (max-width: 1024px) {
         font-size: 1rem;
         gap: 0.5rem;
+      }
+      &:hover {
+        background-position: bottom left; /* 下線のホバー時位置 */
+        background-size: 100% 1px; /* 下線の横幅を100%にする */
       }
       .header__logo-img {
         width: 100px;
@@ -104,7 +121,7 @@
         padding-block: 10rem;
         width: 160px;
       }
-            &.active {
+      &.active {
         right: 0;
       }
     }
@@ -131,10 +148,23 @@
         @media (max-width: 1024px) {
           font-size: 1rem;
         }
+              &:nth-child(5) a:hover {
+        background-size: 0 0; /* 下線を表示しない */
+      }
       }
       .nav-list__item a {
         text-decoration: none;
         color: #333;
+        padding-bottom: 3px; /* テキストと下線の間隔 */
+        background-image: linear-gradient(#000, #000);
+        background-repeat: no-repeat;
+        background-position: bottom right; /* 下線の初期位置 */
+        background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+        transition: background-size 0.3s;
+        &:hover {
+          background-position: bottom left; /* 下線のホバー時位置 */
+          background-size: 100% 1px; /* 下線の横幅を100%にする */
+        }
       }
       .nav-list__item-sns {
         list-style: none;
@@ -149,6 +179,16 @@
         color: #fff;
         padding: 0.8rem 2rem;
         border-radius: 2rem;
+        border: 2px solid #8c6458;
+        &:hover {
+          background-color: #fff;
+          color: #8c6458;
+          border: 2px solid #8c6458;
+          transition: all 0.3s ease;
+        }
+        &:active {
+          transform: translate(4px, 4px);
+        }
       }
     }
   }
