@@ -1,15 +1,22 @@
 .hero {
   background-image: url(../img/hero.webp);
-  height: 100vh;
+  height: calc(100vh - 137px);
   background-size: cover;
   margin-top: 137px;
   color: #fff;
+  display: flex;
+  align-items: center;
   .hero__title {
-    margin-left: 2rem;
+    margin-left: 3rem;
     h1{
       font-size: 100px;
       font-weight: bold;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      margin-left: 1rem;
     }
     a {
       text-decoration: none;
@@ -18,6 +25,7 @@
       padding: 1rem 2rem;
       border-radius: 2rem;
       font-size: 1.6rem;
+      margin-left: 1rem;
     }
   }
 }
