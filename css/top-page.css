@@ -133,6 +133,9 @@
     padding: 2rem 3rem;
     z-index: 2;
     margin-left: -2rem;
+    @media (max-width: 899px) {
+      margin-left: 0;
+    }
     h2 {
       color: #fff;
       margin-bottom: 1rem;
