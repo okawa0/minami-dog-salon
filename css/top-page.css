@@ -117,8 +117,37 @@
       }
     }
   }
-  .cta{
+  .cta {
     display: flex;
     justify-content: center;
+  }
+}
+
+.intro {
+  display: flex;
+  padding-block: 6rem;
+  justify-content: center;
+  align-items: center;
+  .intro__content {
+    background-color: #8c6458;
+    padding: 2rem 3rem;
+    z-index: 2;
+    margin-left: -2rem;
+    h2 {
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+    p {
+      color: #fff;
+      max-width: 30ch;
+      line-height: 1.6;
+    }
+  }
+  @media (max-width: 899px) {
+    flex-direction: column;
+    .intro__content {
+      width: 100%;
+    }
   }
 }
