@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/top-page.css">
   <script src="<?php echo get_template_directory_uri(); ?>/js/header.js" defer></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/top-page.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
 
 <body>
