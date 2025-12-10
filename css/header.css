@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   color: #333;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial,
+    sans-serif;
 }
 img {
   max-width: 100%;
@@ -26,7 +29,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 9999;
-  background: #fff;
+  background: #f0f2f5;
   .header__container {
     width: 88%;
     margin: 0 auto;

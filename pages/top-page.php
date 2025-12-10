@@ -2,7 +2,7 @@
   <div class="hero__title">
     <h1 class="fade-up">みなみ<br>ドッグサロン</h1>
     <p class="fade-up">スタイリストが愛情を込めてお手入れをいたします</p>
-    <a class="fade-up" href="#">今すぐ予約</a>
+    <a class="cta fade-up" href="#">今すぐ予約</a>
   </div>
 </section>
 
@@ -30,5 +30,5 @@
       <p class="fade-up">専門スタッフが丁寧にケア！愛犬の爪を適切な長さに整え、安全で快適に。</p>
     </article>
   </div>
-  <a href="#">今すぐ予約</a>
+  <a class="cta fade-up" href="#">今すぐ予約</a>
 </section>
