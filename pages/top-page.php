@@ -32,3 +32,14 @@
   </div>
   <a class="cta fade-up" href="#">今すぐ予約</a>
 </section>
+
+<section class="intro">
+  <div class="intro__img">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/introduce.webp" alt="犬を抱く女性">
+  </div>
+
+  <div class="intro__content">
+    <h2>はじめての方へ</h2>
+    <p>初めてのご来店でも、どうぞ安心してお越しください。わんちゃん一頭ずつ丁寧にカウンセリングし、負担の少ない施術を心がけています。苦手な作業や皮膚の状態、いつもの生活スタイルなど、気になることは何でもお聞かせください。「また来たい」と思ってもらえるよう、やさしい時間と仕上がりをお届けします。</p>
+  </div>
+</section>
