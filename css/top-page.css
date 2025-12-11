@@ -148,7 +148,7 @@
       color: #fff;
       max-width: 30ch;
       line-height: 1.6;
-      @media (max-width:899px){
+      @media (max-width: 899px) {
         max-width: 80%;
       }
     }
@@ -158,6 +158,25 @@
     .intro__content {
       width: 100%;
     }
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  &.is-active {
+    display: flex;
   }
 }
 
@@ -181,11 +200,9 @@
   .gallery__imgs {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    padding: 1rem;
     .item {
       width: 400px;
-      scroll-snap-align: start;
-      flex: 0 0 auto;
     }
   }
 }

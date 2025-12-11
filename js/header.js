@@ -1,3 +1,4 @@
+// ハンバーガーメニュー
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const menu = document.querySelector('.header__nav'); 
 const overlay = document.getElementById('overlay');
