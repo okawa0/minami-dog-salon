@@ -23,12 +23,14 @@ const triggers = document.querySelectorAll('.popup-trigger');
 const popupOverlay = document.getElementById('popupOverlay');
 const popupImage = document.getElementById('popupImage');
 
-triggers.forEach(img => {
-  img.addEventListener('click', () => {
-    popupImage.src = img.src;
+triggers.forEach(box => {
+  box.addEventListener('click', () => {
+    const img = box.querySelector('img'); // ← 中の画像を取得
+    popupImage.src = img.src;             // ← これで正しい src が入る
     popupOverlay.classList.add('is-active');
   });
 });
+
 
 // 背景クリックで閉じる
 popupOverlay.addEventListener('click', (e) => {

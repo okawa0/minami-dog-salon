@@ -44,7 +44,9 @@
 </section>
 
 <div class="popup-overlay" id="popupOverlay">
-  <img id="popupImage" src="" alt="">
+  <div class="popup-content">
+    <img id="popupImage" src="" alt="">
+  </div>
 </div>
 
 <div class="gallery">
@@ -53,15 +55,15 @@
     <span>@minami-dogsalon フォローする</span>
   </div>
   <div class="gallery__imgs">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog01.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog02.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog03.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog04.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog05.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog06.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog07.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog08.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog09.webp" alt="施術後の犬">
-    <img class="item popup-trigger" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog10.webp" alt="施術後の犬">
+    <div class="img-hover popup-trigger"><img class="item " src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog01.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog02.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog03.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog04.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog05.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog06.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog07.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog08.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog09.webp" alt="施術後の犬"></div>
+    <div class="img-hover popup-trigger"><img class="item" src="<?php echo htmlspecialchars(get_template_directory_uri()); ?>/img/dog10.webp" alt="施術後の犬"></div>
   </div>
 </div>
