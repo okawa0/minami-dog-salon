@@ -9,6 +9,7 @@
   box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.5);
   font-weight: 700;
   transition: all 0.3s ease;
+  display: inline-block;
   @media (max-width: 899px) {
     font-size: 1.4rem;
     padding: 0.8rem 1.6rem;
@@ -22,6 +23,7 @@
   }
   &:active {
     transform: translate(4px, 4px);
+    box-shadow: none;
   }
 }
 .hero {
@@ -321,18 +323,18 @@
     content: "";
     position: absolute;
     inset: 0;
-    background:rgb(54, 60, 69, 0.8);;
+    background: rgb(54, 60, 69, 0.8);
     z-index: 1;
   }
-  h2{
+  h2 {
     color: #fff;
     z-index: 2;
     margin-bottom: 2rem;
     font-size: 2.4rem;
   }
-  .hours-content{
+  .hours-content {
     z-index: 2;
-    p{
+    p {
       color: #fff;
       font-size: 1.6rem;
       line-height: 1.6;
