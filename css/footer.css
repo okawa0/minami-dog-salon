@@ -15,6 +15,11 @@ footer{
     justify-content: center;
     gap: 3rem;
     margin-bottom: 2rem;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
     a {
       text-decoration: none;
       color: rgb(54, 178, 176);
