@@ -182,10 +182,10 @@
   .popup-content {
     display: flex;
     justify-content: center;
-    width: 600px;
+    width: 1000px;
   }
   img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
   &.is-active {
@@ -195,6 +195,29 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    .aside-logo {
+      text-align: center;
+      padding: 1rem;
+      svg {
+        width: 20px;
+        height: auto;
+      }
+    }
+    .aside-menu {
+      height: 200px;
+      border-block: 1px solid #ccc;
+    }
+    .aside-date {
+      text-align: right;
+      font-size: 1.2rem;
+      color: #666;
+      padding: 1rem;
+      p{
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -350,24 +373,23 @@
 .contact {
   padding-block: 3rem;
   width: 50%;
-  margin: 0 auto ;
+  margin: 0 auto;
   @media (max-width: 899px) {
     width: 90%;
   }
-  h2{
+  h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size:2.5rem;
+    font-size: 2.5rem;
   }
-  p+p{
+  p + p {
     margin-top: 1rem;
   }
-  .button{
+  .button {
     margin-top: 2rem;
     text-align: center;
-
   }
-  button{
+  button {
     background-color: #36b3b0;
     color: #fff;
     padding: 0.5rem 5rem;
@@ -386,7 +408,7 @@
       transform: translate(0, 4px);
     }
   }
-  label{
+  label {
     display: block;
   }
   .is-required::after {
@@ -394,7 +416,8 @@
     color: #ff0000;
     margin-left: 5px;
   }
-  input,textarea{
+  input,
+  textarea {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
