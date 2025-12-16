@@ -145,17 +145,13 @@
 
 <div class="contact">
   <h2>お問い合わせ</h2>
-  <form action="/my-handling-form-page" method="post">
+  <form onsubmit="return false;">
     <p>
-      <label for="name">お名前</label>
+      <label for="name" class="is-required">お名前</label>
       <input type="text" id="name" name="user_name" />
     </p>
     <p>
-      <label for="name">ふりがな</label>
-      <input type="text" id="name" name="user_name" />
-    </p>
-    <p>
-      <label for="mail">メールアドレス</label>
+      <label for="mail" class="is-required">メールアドレス</label>
       <input type="email" id="mail" name="user_email" />
     </p>
     <p>
@@ -163,7 +159,7 @@
       <input type="tel" id="tel" name="user_tel" />
     </p>
     <p>
-      <label for="msg">メッセージ</label>
+      <label for="msg" class="is-required">お問い合わせ内容</label>
       <textarea id="msg" name="user_message"></textarea>
     </p>
     <p class="button">

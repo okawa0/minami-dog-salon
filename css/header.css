@@ -140,13 +140,13 @@ img {
       @media (max-width: 1024px) {
         position: fixed;
         top: 0;
-        right: -180px;
+        right: -100%;
         height: 100vh;
         background: #fff;
         transition: right 0.3s ease;
         z-index: 9999;
         padding-block: 10rem;
-        width: 160px;
+        width: 100%;
       }
       &.active {
         right: 0;
