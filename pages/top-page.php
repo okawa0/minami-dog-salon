@@ -51,8 +51,8 @@
 
 <div class="gallery">
   <div class="gallery__title">
-    <h2>満足げなワンちゃん達</h2>
-    <span>@minami-dogsalon フォローする</span>
+    <h2 class="fade-up">満足げなワンちゃん達</h2>
+    <span class="fade-up">@minami-dogsalon フォローする</span>
   </div>
   <div class="gallery-wrapper">
     <button class="arrow left" id="arrowLeft"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -94,8 +94,8 @@
           <path d="M53.5 25.6c-1.4 2.7-3.2 4.9-5.5 6.8-2.3 1.9-4.9 3.3-8 4.4-3.1 1.1-6.2 1.6-9.4 1.6v-2c4.7-.9 8.3-2.4 10.9-4.5 2.6-2.1 3.9-5.2 3.9-9.5 0-1.2-.1-2.3-.4-3.3-.3-1-.5-1.8-.8-2.5-1.2.9-2.5 1.6-4 1.9-1.5.3-2.7.5-3.8.5-2.7 0-4.7-.9-6.1-2.7-1.4-1.8-2.1-3.7-2.1-5.7 0-3.3 1.2-5.9 3.7-7.6C34.4 1.3 37.1.4 40.2.4c4.5 0 8.2 1.6 11.1 4.8 2.9 3.2 4.3 7 4.3 11.4 0 3.3-.7 6.3-2.1 9z" fill="#4fd0ce" data-color="1"></path>
         </g>
       </svg>
-      <p>大型犬のシャンプー代が高くて悩んでましたが、ここなら手軽に洗えて助かります！ドライボックスもあるので、ちゃんと乾いて大満足。</p>
-      <span>シェリーちゃんのご主人様</span>
+      <p class="fade-up">大型犬のシャンプー代が高くて悩んでましたが、ここなら手軽に洗えて助かります！ドライボックスもあるので、ちゃんと乾いて大満足。</p>
+      <span class="fade-up">シェリーちゃんのご主人様</span>
     </div>
     <div class="voice-card">
       <svg preserveAspectRatio="xMidYMid meet" data-bbox="0.4 0.4 55.2 38" viewBox="0.4 0.4 55.2 38" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true">
@@ -111,8 +111,8 @@
           <path d="M53.5 25.6c-1.4 2.7-3.2 4.9-5.5 6.8-2.3 1.9-4.9 3.3-8 4.4-3.1 1.1-6.2 1.6-9.4 1.6v-2c4.7-.9 8.3-2.4 10.9-4.5 2.6-2.1 3.9-5.2 3.9-9.5 0-1.2-.1-2.3-.4-3.3-.3-1-.5-1.8-.8-2.5-1.2.9-2.5 1.6-4 1.9-1.5.3-2.7.5-3.8.5-2.7 0-4.7-.9-6.1-2.7-1.4-1.8-2.1-3.7-2.1-5.7 0-3.3 1.2-5.9 3.7-7.6C34.4 1.3 37.1.4 40.2.4c4.5 0 8.2 1.6 11.1 4.8 2.9 3.2 4.3 7 4.3 11.4 0 3.3-.7 6.3-2.1 9z" fill="#4fd0ce" data-color="1"></path>
         </g>
       </svg>
-      <p>ラブラドールの子がいるので、毎週セルフシャンプーを利用しています。お店の雰囲気もよくて、スタッフさんも優しい！</p>
-      <span>ジャッコくんのご主人様</span>
+      <p class="fade-up">ラブラドールの子がいるので、毎週セルフシャンプーを利用しています。お店の雰囲気もよくて、スタッフさんも優しい！</p>
+      <span class="fade-up">ジャッコくんのご主人様</span>
     </div>
     <div class="voice-card">
       <svg preserveAspectRatio="xMidYMid meet" data-bbox="0.4 0.4 55.2 38" viewBox="0.4 0.4 55.2 38" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true">
@@ -128,15 +128,15 @@
           <path d="M53.5 25.6c-1.4 2.7-3.2 4.9-5.5 6.8-2.3 1.9-4.9 3.3-8 4.4-3.1 1.1-6.2 1.6-9.4 1.6v-2c4.7-.9 8.3-2.4 10.9-4.5 2.6-2.1 3.9-5.2 3.9-9.5 0-1.2-.1-2.3-.4-3.3-.3-1-.5-1.8-.8-2.5-1.2.9-2.5 1.6-4 1.9-1.5.3-2.7.5-3.8.5-2.7 0-4.7-.9-6.1-2.7-1.4-1.8-2.1-3.7-2.1-5.7 0-3.3 1.2-5.9 3.7-7.6C34.4 1.3 37.1.4 40.2.4c4.5 0 8.2 1.6 11.1 4.8 2.9 3.2 4.3 7 4.3 11.4 0 3.3-.7 6.3-2.1 9z" fill="#4fd0ce" data-color="1"></path>
         </g>
       </svg>
-      <p>多頭飼いなので、定期的なシャンプー代がかなり負担。でもここは値段が手頃で、なおかつしっかり洗えて乾かせるので、コスパ抜群！</p>
-      <span>レオンくんのご主人様</span>
+      <p class="fade-up">多頭飼いなので、定期的なシャンプー代がかなり負担。でもここは値段が手頃で、なおかつしっかり洗えて乾かせるので、コスパ抜群！</p>
+      <span class="fade-up">レオンくんのご主人様</span>
     </div>
   </div>
 </div>
 
 <div class="opening-hours">
-  <h2>営業時間</h2>
-  <div class="hours-content">
+  <h2 class="fade-up">営業時間</h2>
+  <div class="hours-content fade-down">
     <p>平日：09:00 - 18:00</p>
     <p>土曜：10:00 - 14:00</p>
     <p>日曜：定休日</p>
@@ -144,8 +144,8 @@
 </div>
 
 <div class="contact">
-  <h2>お問い合わせ</h2>
-  <form onsubmit="return false;">
+  <h2 class="fade-up">お問い合わせ</h2>
+  <form onsubmit="return false;" class="fade-up">
     <p>
       <label for="name" class="is-required">お名前</label>
       <input type="text" id="name" name="user_name" />
