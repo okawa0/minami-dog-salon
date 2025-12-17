@@ -1,0 +1,12 @@
+.service__hero {
+  background-image: url(../img/service-bg.webp);
+  background-size: cover;
+  background-position: center;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(54, 60, 69, 0.8);
+    z-index: 1;
+  }
+}

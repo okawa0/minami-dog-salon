@@ -68,7 +68,7 @@
 
 <div class="gallery">
   <div class="gallery__title">
-    <h2 class="fade-up">満足げなワンちゃん達</h2>
+    <h2 class="fade-up">すっきりしたワンちゃんの様子</h2>
     <span class="fade-up">@minami-dogsalon フォローする</span>
   </div>
   <div class="gallery-wrapper">

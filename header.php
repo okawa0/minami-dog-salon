@@ -38,7 +38,7 @@
       <nav class="header__nav" id="global-nav" aria-label="グローバルナビゲーション">
         <ul class="nav-list">
           <li class="nav-list__item"><a href="#">ホーム</a></li>
-          <li class="nav-list__item"><a href="#">オンライン予約</a></li>
+          <li class="nav-list__item"><a href="<?php echo esc_url(home_url('/service-page/')); ?>">オンライン予約</a></li>
           <li class="nav-list__item">
             <ul class="nav-list__item-sns">
               <li class="nav-list__item-sns-icon"><a class="nav-list__item-sns-icon-link" href="#"><img class="nav-list__item-sns-icon-img" src="<?php echo get_template_directory_uri(); ?>/img/facebook-logo.png" alt="facebookロゴ"></a></li>
