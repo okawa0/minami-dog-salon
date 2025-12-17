@@ -5,7 +5,7 @@ const overlay = document.getElementById('overlay');
 
 // --- SP かどうかを判定 ---
 function isMobile() {
-  return window.matchMedia('(max-width: 1024px)').matches;
+  return window.matchMedia('(max-width: 1200px)').matches;
 }
 
 function toggleMenu() {

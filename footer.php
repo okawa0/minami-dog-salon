@@ -7,7 +7,7 @@
   <div class="footer__menu">
     <a class="footer__menu-link" href="#">プライバシーポリシー</a>
     <a class="footer__menu-link" href="#">Cookieポリシー</a>
-    <a class="footer__menu-link" href="#">特定商取引法に基づく表記（例）</a>
+    <a class="footer__menu-link" href="#">特定商取引法に基づく表記</a>
   </div>
   <p class="footer__copyright">© 2024 みなみドッグサロン</p>
 </footer>

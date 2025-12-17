@@ -1,15 +1,15 @@
 .cta {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  background-color: #36b3b0;
+  border-radius: 2rem;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   color: #fff;
-  background-color: #36b3b0;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
   font-size: 1.6rem;
-  margin-left: 1rem;
-  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.5);
   font-weight: 700;
-  transition: all 0.3s ease;
-  display: inline-block;
   @media (max-width: 899px) {
     font-size: 1.4rem;
     padding: 0.8rem 1.6rem;
@@ -90,6 +90,10 @@
     font-size: 3rem;
     margin-block: 5rem;
     text-align: center;
+    @media (max-width: 899px) {
+      font-size: 2rem;
+      margin-block: 3rem;
+    }
   }
   .service-cards {
     display: grid;
@@ -153,6 +157,9 @@
       color: #fff;
       margin-bottom: 1rem;
       font-size: 2.5rem;
+      @media (max-width: 899px) {
+        font-size: 2rem;
+      }
     }
     p {
       color: #fff;
@@ -214,7 +221,7 @@
       font-size: 1.2rem;
       color: #666;
       padding: 1rem;
-      p{
+      p {
         text-align: center;
       }
     }
@@ -303,7 +310,7 @@
 
 .voice {
   background-color: #f0f2f5;
-  padding-block: 5rem;
+  padding: 5rem 1rem;
   h2 {
     font-size: 3rem;
     text-align: center;
@@ -359,6 +366,9 @@
     z-index: 2;
     margin-bottom: 2rem;
     font-size: 2.4rem;
+    @media (max-width: 899px) {
+      font-size: 2rem;
+    }
   }
   .hours-content {
     z-index: 2;
@@ -381,6 +391,9 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2.5rem;
+    @media (max-width: 899px) {
+      font-size: 2rem;
+    }
   }
   p + p {
     margin-top: 1rem;
