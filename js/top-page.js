@@ -45,7 +45,6 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-
 const gallery = document.getElementById('galleryImgs');
 const btnLeft = document.getElementById('arrowLeft');
 const btnRight = document.getElementById('arrowRight');
@@ -59,3 +58,7 @@ btnLeft.addEventListener('click', () => {
   const imgWidth = gallery.querySelector('.item').offsetWidth;
   gallery.scrollLeft -= imgWidth;
 });
+
+// ヘッダー高さ吸収
+const header = document.querySelector('.site-header');
+document.documentElement.style.paddingTop =`${header.offsetHeight}px`;

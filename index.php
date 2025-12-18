@@ -1,7 +1,7 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
+<main>
+    <p>みなみドッグサロン</p>
+</main>
 
-include get_template_directory() . '/pages/top-page.php';
-
-get_footer();
+<?php get_footer(); ?>
