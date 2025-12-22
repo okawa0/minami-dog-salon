@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   @media (max-width: 1024px) {
-    margin-top: 92px;
+    /* margin-top: 92px; */
     background-image: url(../img/hero-sp.webp);
     background-position: center bottom;
   }
@@ -202,19 +202,45 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 30%;
     .aside-logo {
       text-align: center;
       padding: 1rem;
-      svg {
-        width: 20px;
-        height: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 1rem;
+      p {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+      p a {
+        display: inline-flex;
+        align-items: center;
+      }
+      p a svg {
+        width: 24px;
+        height: 24px;
+      }
+      .modal__close {
+        border: none;
+        background: none;
+        cursor: pointer;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
     .aside-menu {
-      height: 200px;
+      height: 40vh;
       border-block: 1px solid #ccc;
+      button{
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+      }
     }
     .aside-date {
       text-align: right;
@@ -241,7 +267,7 @@
       color: #fff;
       font-size: 3rem;
       @media (max-width: 899px) {
-        font-size: 2rem;
+        font-size: clamp(1.2rem, 4vw, 2rem);
       }
     }
     span {
@@ -255,7 +281,7 @@
       overflow-x: auto;
       padding: 1rem;
       scroll-behavior: smooth;
-      scrollbar-width: none;  /* for Firefox */
+      scrollbar-width: none; /* for Firefox */
       &::-webkit-scrollbar {
         display: none;
       }
@@ -263,6 +289,18 @@
         position: relative;
         display: inline-block;
         flex-shrink: 0;
+        .gallery__img-text {
+          position: absolute;
+          inset: 0;
+          left: 20px;
+          display: grid;
+          place-items: center;
+          color: #fff;
+          font-size: clamp(1rem, 2vw, 1.5rem);
+          opacity: 0;
+          transition: opacity 0.3s;
+          z-index: 2;
+        }
         &::after {
           content: "";
           position: absolute;
@@ -276,9 +314,12 @@
           &::after {
             opacity: 1;
           }
+          .gallery__img-text {
+            opacity: 1;
+          }
         }
         .item {
-          width: clamp(240px, 30vw, 420px);
+          width: clamp(200px, 25vw, 400px);
         }
       }
     }

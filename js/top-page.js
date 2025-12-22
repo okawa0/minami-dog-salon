@@ -62,3 +62,34 @@ btnLeft.addEventListener('click', () => {
 // ヘッダー高さ吸収
 const header = document.querySelector('.site-header');
 document.documentElement.style.paddingTop =`${header.offsetHeight}px`;
+
+
+// ポップアップ閉じるボタン
+const closeBtn = popupOverlay.querySelector('.modal__close');
+
+closeBtn.addEventListener('click', () => {
+  popupOverlay.classList.remove('is-active');
+});
+
+
+// ギャラリーポップアップ画像遷移
+const items = document.querySelectorAll('#galleryImgs .item');
+
+const prevBtn = document.querySelector('.arrow--prev');
+const nextBtn = document.querySelector('.arrow--next');
+
+let currentIndex = 0;
+
+// 初期表示
+popupImage.src = items[currentIndex].querySelector('item').src;
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % items.length;
+  popupImage.src = items[currentIndex].querySelector('item').src;
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex =
+    (currentIndex - 1 + items.length) % items.length;
+  popupImage.src = items[currentIndex].querySelector('item').src;
+});
