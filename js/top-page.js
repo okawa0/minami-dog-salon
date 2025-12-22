@@ -72,24 +72,30 @@ closeBtn.addEventListener('click', () => {
 });
 
 
-// ギャラリーポップアップ画像遷移
+// ポップアップ内の画像切り替え
 const items = document.querySelectorAll('#galleryImgs .item');
-
 const prevBtn = document.querySelector('.arrow--prev');
 const nextBtn = document.querySelector('.arrow--next');
 
 let currentIndex = 0;
 
-// 初期表示
-popupImage.src = items[currentIndex].querySelector('item').src;
+// 初期表示（ポップアップを開いたタイミングで呼ぶ想定）
+popupImage.src = items[currentIndex].src;
 
 nextBtn.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % items.length;
-  popupImage.src = items[currentIndex].querySelector('item').src;
+  popupImage.src = items[currentIndex].src;
 });
 
 prevBtn.addEventListener('click', () => {
-  currentIndex =
-    (currentIndex - 1 + items.length) % items.length;
-  popupImage.src = items[currentIndex].querySelector('item').src;
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  popupImage.src = items[currentIndex].src;
+});
+
+document.querySelectorAll('.popup-trigger').forEach((trigger, index) => {
+  trigger.addEventListener('click', () => {
+    currentIndex = index;
+    popupImage.src = items[currentIndex].src;
+    popupOverlay.classList.add('is-open');
+  });
 });
