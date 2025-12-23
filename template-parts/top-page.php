@@ -65,8 +65,10 @@
           </svg></button>
       </div>
       <div class="aside-menu">
-        <button class="arrow arrow--prev" aria-label="前へ">〈</button>
-        <button class="arrow arrow--next" aria-label="次へ">〉</button>
+        <div class="arrows">
+          <button class="arrow arrow--prev" aria-label="前へ">〈</button>
+          <button class="arrow arrow--next" aria-label="次へ">〉</button>
+        </div>
         <p>#minami,#dogsalon,#dog,#grooming,#shampoo,#petsalon</p>
       </div>
       <div class="aside-date">

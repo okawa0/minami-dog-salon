@@ -267,6 +267,11 @@
       height: 70vh;
       border-block: 1px solid #ccc;
       padding: 2rem;
+      .arrows{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
       button {
         background-color: #fff;
         border: none;
