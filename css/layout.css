@@ -1,19 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #333;
-  font-family: "M PLUS Rounded 1c", "Noto Sans JP", "Hiragino Sans",
-    "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont,
-    "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
+/* ヘッダー */
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
@@ -219,5 +204,44 @@ img {
         }
       }
     }
+  }
+}
+
+/* フッター */
+footer{
+  padding-block: 3rem;
+  .footer__sns-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    a img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .footer__menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(54, 178, 176);
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .footer__copyright {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
   }
 }

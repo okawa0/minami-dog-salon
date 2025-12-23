@@ -1,5 +1,8 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/*
+Theme Name: Minami Dog Salon
+*/
+
+@import url("css/base.css");
+@import url("css/layout.css");
+@import url("css/page/front.css");
+@import url("css/page/service.css");

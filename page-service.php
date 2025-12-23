@@ -1,14 +1,16 @@
 <?php
 /*
-Template Name: page-service
+Template Name: サービスページ
 */
 get_header();
 ?>
 
 <main>
-  <?php
-  get_template_part('template-parts/page-service/page-service-hero-section');
-  ?>
+  <div class="service__hero">
+    <div class="service__hero-content">
+      <h1 class="service__hero-title">サービス</h1>
+    </div>
+  </div>
 </main>
 
 <?php get_footer(); ?>
