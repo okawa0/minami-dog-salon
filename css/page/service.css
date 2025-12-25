@@ -1,12 +1,51 @@
 .service__hero {
-  background-image: url(../img/service-bg.webp);
-  background-size: cover;
-  background-position: center;
+  position: relative;
   &::before {
     content: "";
     position: absolute;
     inset: 0;
     background: rgb(54, 60, 69, 0.8);
     z-index: 1;
+  }
+  .service__hero-bg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .service__hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    z-index: 2;
+  }
+}
+.service__menus {
+  .tabs {
+    position: relative;
+    display: flex;
+
+    .tab {
+      padding: 12px 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .tab-underline {
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      background: #000 !important;
+      transition: transform 0.3s ease, width 0.3s ease;
+    }
+  }
+  .tab-content {
+    display: none;
+    &.is-active {
+      display: block;
+    }
   }
 }

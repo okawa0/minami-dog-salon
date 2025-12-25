@@ -99,3 +99,41 @@ document.querySelectorAll('.popup-trigger').forEach((trigger, index) => {
     popupOverlay.classList.add('is-open');
   });
 });
+
+
+// サービスページのタブ切り替え
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.tab-content');
+const underline = document.querySelector('.tab-underline');
+
+function moveUnderline(target) {
+  const rect = target.getBoundingClientRect();
+  const parentRect = target.parentElement.getBoundingClientRect();
+
+  underline.style.width = rect.width + 'px';
+  underline.style.transform =
+    `translateX(${rect.left - parentRect.left}px)`;
+}
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const targetId = tab.dataset.tab;
+
+    // active解除
+    tabs.forEach(t => t.classList.remove('is-active'));
+    contents.forEach(c => c.classList.remove('is-active'));
+
+    // active付与
+    tab.classList.add('is-active');
+    document.getElementById(targetId).classList.add('is-active');
+
+    // 下線移動
+    moveUnderline(tab);
+  });
+});
+
+// 初期化
+const activeTab = document.querySelector('.tab.is-active');
+if (activeTab) {
+  moveUnderline(activeTab);
+}

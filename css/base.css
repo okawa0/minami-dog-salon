@@ -8,6 +8,10 @@
     "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   height: auto;
